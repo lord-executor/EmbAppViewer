@@ -58,6 +58,15 @@ namespace EmbAppViewer.Core
         /// </summary>
         public bool IsApp => !IsFolder;
 
+        public Item() { }
+
+        public Item(CliArguments arguments)
+        {
+            Path = arguments.Cmd;
+            Name = arguments.Name ?? System.IO.Path.GetFileNameWithoutExtension(arguments.Cmd);
+            Arguments = arguments.Args;
+        }
+
         public override string ToString()
         {
             return $"{(IsFolder ? "Dir" : "App")}: {Name}";

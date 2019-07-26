@@ -65,7 +65,7 @@ namespace EmbAppViewer.Presentation
             EmbeddAppInTab(appInstance);
         }
 
-        private void EmbeddAppInTab(ApplicationInstance appInstance)
+        public void EmbeddAppInTab(ApplicationInstance appInstance)
         {
             // Create a new hosting-panel for the application to embedd
             Panel containerPanel;

@@ -76,6 +76,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CliArguments.cs" />
     <Compile Include="Core\ApplicationInstance.cs" />
     <Compile Include="Core\Config.cs" />
     <Compile Include="Core\ConfigLoader.cs" />

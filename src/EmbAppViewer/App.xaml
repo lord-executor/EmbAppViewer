@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:EmbAppViewer"
              StartupUri="Presentation/MainView.xaml"
              Startup="Application_Startup"
-             Exit="Application_Exit">
+             Exit="Application_Exit"
+             Activated="Application_Activated">
     <Application.Resources>
          
     </Application.Resources>
