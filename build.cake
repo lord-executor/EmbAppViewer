@@ -37,7 +37,7 @@ Task("Build")
 {
     MSBuild(slnPath, new MSBuildSettings {
         Verbosity = Verbosity.Minimal,
-        ToolVersion = MSBuildToolVersion.VS2017,
+        ToolVersion = MSBuildToolVersion.VS2019,
         Configuration = configuration
     }.AddFileLogger(new MSBuildFileLogger {
         LogFile = artifactsDir.CombineWithFilePath("BuildLog.txt"),
